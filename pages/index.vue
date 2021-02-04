@@ -1,9 +1,11 @@
 <template>
-  <div></div>
+  <div id="app">
+    <TemplateLanding />
+  </div>
 </template>
 
 <script>
 export default {
-  layout: 'landing',
+  name: 'App',
 }
 </script>

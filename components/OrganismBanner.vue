@@ -9,9 +9,9 @@
     </header>
   </div>
 </template>
- 
+
 <script>
 export default {
-  name: 'MoleculeBanner',
+  name: 'OrganismBanner',
 }
 </script>

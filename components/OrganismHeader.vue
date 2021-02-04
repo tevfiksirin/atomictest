@@ -1,4 +1,4 @@
- <template>
+<template>
   <header
     class="absolute inset-x-0 text-gray-100 py-4 flex flex-wrap items-center"
   >
@@ -14,7 +14,7 @@
   </header>
 </template>
 
- <script>
+<script>
 export default {
   name: 'OrganismHeader',
   props: ['links'],
