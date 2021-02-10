@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: "AtomLink",
-  props: ["link"]
-};
+  name: 'AtomLink',
+  props: ['link'],
+}
 </script>

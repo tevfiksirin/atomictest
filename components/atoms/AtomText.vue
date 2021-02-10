@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: "AtomText",
-  props: ["text"]
-};
+  name: 'AtomText',
+  props: ['text'],
+}
 </script>
