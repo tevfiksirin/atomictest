@@ -5,15 +5,3 @@
     </h1>
   </div>
 </template>
-<script>
-export default {
-  data: () => {
-    return {
-      links: [
-        { name: 'Anasayfa', url: '/' },
-        { name: 'Dost', url: '/dost' },
-      ],
-    }
-  },
-}
-</script>
