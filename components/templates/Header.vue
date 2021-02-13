@@ -10,6 +10,7 @@ export default {
       linkMenus: [
         { name: 'Anasayfa', url: '/' },
         { name: 'Dost', url: '/dost' },
+        { name: 'Work', url: '/work' },
       ],
       logoLink: [{ name: '', url: '/' }],
     }
