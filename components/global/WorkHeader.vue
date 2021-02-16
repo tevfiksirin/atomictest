@@ -1,7 +1,7 @@
 <template>
   <div class="w-full h-auto">
     <div class="container h-auto mx-auto">
-      <header class="flex px-2 justify-between">
+      <header class="flex justify-between px-2">
         <div>
           <img
             class=""
@@ -34,9 +34,9 @@
         <div class="flex justify-end">
           <div
             :class="isOpen ? 'block' : 'hidden'"
-            class="flex justify-end w-5/12 items-center md:flex"
+            class="flex items-center justify-end w-5/12 md:flex"
           >
-            <ul class="flex p-2 h-auto gap-x-1">
+            <ul class="flex h-auto p-2 gap-x-1">
               <li class="p-2 place-self-center">
                 <nuxt-link class="" to="/">Anasayfa</nuxt-link>
               </li>
