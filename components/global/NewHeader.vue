@@ -1,10 +1,12 @@
 <template>
-  <header class="bg-gray-200">
-    <div class="flex items-center justify-between px-4 py-3">
+  <header
+    class="bg-gray-200 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3"
+  >
+    <div class="flex items-center justify-between px-4 py-3 sm:p-0">
       <div>
         <img class="h-8" src="/logo40.png" alt="" />
       </div>
-      <div>
+      <div class="sm:hidden">
         <button
           @click="isOpen = !isOpen"
           type="button"
@@ -25,19 +27,22 @@
         </button>
       </div>
     </div>
-    <div :class="isOpen ? 'block' : 'hidden'" class="px-2 pt-2 pb-4">
+    <div
+      :class="isOpen ? 'block' : 'hidden'"
+      class="px-2 pt-2 pb-4 sm:flex sm:p-0"
+    >
       <nuxt-link
         class="block px-2 py-1 font-semibold rounded hover:bg-orange-400"
         to="/"
         >Anasayfa</nuxt-link
       >
       <nuxt-link
-        class="block px-2 py-1 mt-1 font-semibold rounded hover:bg-orange-400"
+        class="block px-2 py-1 mt-1 font-semibold rounded hover:bg-orange-400 sm:mt-0 sm:ml-2"
         to="/dost"
         >Dost</nuxt-link
       >
       <nuxt-link
-        class="block px-2 py-1 mt-1 font-semibold rounded hover:bg-orange-400"
+        class="block px-2 py-1 mt-1 font-semibold rounded hover:bg-orange-400 sm:mt-0 sm:ml-2"
         to="/work"
         >Work</nuxt-link
       >
