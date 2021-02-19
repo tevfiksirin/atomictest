@@ -33,24 +33,46 @@
     >
       <nuxt-link
         class="block px-2 py-1 font-semibold rounded hover:bg-orange-400"
-        to="/"
-        >Anasayfa</nuxt-link
+        :to="localePath('/')"
+        >{{ $t('homepage') }}</nuxt-link
       >
       <nuxt-link
         class="block px-2 py-1 mt-1 font-semibold rounded hover:bg-orange-400 sm:mt-0 sm:ml-2"
-        to="/dost"
-        >Dost</nuxt-link
+        :to="localePath('/dost')"
+        >{{ $t('dude') }}</nuxt-link
       >
       <nuxt-link
         class="block px-2 py-1 mt-1 font-semibold rounded hover:bg-orange-400 sm:mt-0 sm:ml-2"
-        to="/work"
-        >Work</nuxt-link
+        :to="localePath('/work')"
+        >{{ $t('work') }}</nuxt-link
+      >
+      <nuxt-link
+        class="block px-2 py-1 mt-1 font-semibold rounded hover:bg-orange-400 sm:mt-0 sm:ml-2"
+        :to="localePath('/lang')"
+        >{{ $t('lang') }}</nuxt-link
+      >
+      <nuxt-link
+        class="block px-2 py-1 mt-1 font-semibold rounded hover:bg-orange-400 sm:mt-0 sm:ml-2"
+        :to="localePath('/menutest')"
+        >{{ $t('menutest') }}</nuxt-link
+      >
+      <nuxt-link
+        class="block px-2 py-1 mt-1 font-semibold rounded hover:bg-orange-400 sm:mt-0 sm:ml-2"
+        v-for="locale in availableLocales"
+        :key="locale.code"
+        :to="switchLocalePath(locale.code)"
+        >{{ locale.name }}</nuxt-link
       >
     </div>
   </header>
 </template>
 <script>
 export default {
+  computed: {
+    availableLocales() {
+      return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
+    },
+  },
   data() {
     return {
       isOpen: false,

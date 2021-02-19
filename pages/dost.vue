@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <h1 class="bg-indigo-700 text-white text-center pt-16 pb-16">
-      Merhaba Dost
-    </h1>
+  <div class="flex h-64 bg-indigo-500 gap-14 items-center justify-center">
+    <h1 class="text-white text-3xl">Merhaba {{ $t('dude') }}</h1>
   </div>
 </template>

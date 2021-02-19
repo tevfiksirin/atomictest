@@ -11,6 +11,7 @@ export default {
         { name: 'Anasayfa', url: '/' },
         { name: 'Dost', url: '/dost' },
         { name: 'Work', url: '/work' },
+        { name: 'Lang', url: '/lang' },
       ],
       logoLink: [{ name: '', url: '/' }],
     }
