@@ -8,7 +8,7 @@ export default {
   data: () => {
     return {
       linkMenus: [
-        { name: 'Anasayfa', url: '/' },
+        { name: '{{ locale.name }}', url: '/' },
         { name: 'Dost', url: '/dost' },
         { name: 'Work', url: '/work' },
         { name: 'Lang', url: '/lang' },
