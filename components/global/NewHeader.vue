@@ -4,7 +4,9 @@
   >
     <div class="flex items-center justify-between px-4 py-3 sm:p-0">
       <div>
-        <img class="h-8" src="/logo40.png" alt="" />
+        <nuxt-link class="" :to="localePath('/')"
+          ><img class="h-8" src="/logo40.png" alt=""
+        /></nuxt-link>
       </div>
       <div class="sm:hidden">
         <button
