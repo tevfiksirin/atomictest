@@ -41,34 +41,24 @@ export default {
     locales: [
       {
         code: 'tr',
+        iso: 'tr-TR',
+        file: 'tr.js',
+        dir: 'ltr',
         name: 'Türkçe',
       },
       {
         code: 'en',
+        iso: 'en-US',
+        file: 'en.js',
+        dir: 'ltr',
         name: 'English',
       },
     ],
     defaultLocale: 'tr',
+    lazy: 'true',
+    langDir: 'lang/',
     vueI18n: {
       fallbackLocale: 'tr',
-      messages: {
-        tr: {
-          welcome: 'Hoşgeldiniz',
-          homepage: 'Anasayfa',
-          dude: 'Dost',
-          work: 'Çalışma',
-          lang: 'Dil',
-          menutest: 'Menü Test',
-        },
-        en: {
-          welcome: 'Welcome',
-          homepage: 'Homepage',
-          dude: 'Dude',
-          work: 'Work',
-          lang: 'Lang',
-          menutest: 'Menu Test',
-        },
-      },
     },
   },
 

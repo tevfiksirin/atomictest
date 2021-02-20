@@ -36,27 +36,27 @@
       <nuxt-link
         class="block px-2 py-1 font-semibold rounded hover:bg-orange-400"
         :to="localePath('/')"
-        >{{ $t('homepage') }}</nuxt-link
+        >{{ $t('menu.homepage') }}</nuxt-link
       >
       <nuxt-link
         class="block px-2 py-1 mt-1 font-semibold rounded hover:bg-orange-400 sm:mt-0 sm:ml-2"
         :to="localePath('/dost')"
-        >{{ $t('dude') }}</nuxt-link
+        >{{ $t('menu.dude') }}</nuxt-link
       >
       <nuxt-link
         class="block px-2 py-1 mt-1 font-semibold rounded hover:bg-orange-400 sm:mt-0 sm:ml-2"
         :to="localePath('/work')"
-        >{{ $t('work') }}</nuxt-link
+        >{{ $t('menu.work') }}</nuxt-link
       >
       <nuxt-link
         class="block px-2 py-1 mt-1 font-semibold rounded hover:bg-orange-400 sm:mt-0 sm:ml-2"
         :to="localePath('/lang')"
-        >{{ $t('lang') }}</nuxt-link
+        >{{ $t('menu.lang') }}</nuxt-link
       >
       <nuxt-link
         class="block px-2 py-1 mt-1 font-semibold rounded hover:bg-orange-400 sm:mt-0 sm:ml-2"
         :to="localePath('/menutest')"
-        >{{ $t('menutest') }}</nuxt-link
+        >{{ $t('menu.menutest') }}</nuxt-link
       >
       <nuxt-link
         class="block px-2 py-1 mt-1 font-semibold rounded hover:bg-orange-400 sm:mt-0 sm:ml-2"
