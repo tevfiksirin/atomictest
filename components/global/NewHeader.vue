@@ -38,10 +38,11 @@
         :to="localePath('/')"
         >{{ $t('menu.homepage') }}</nuxt-link
       >
-      <InternalLink internalUrl="localePath('/dost')">
-        <template slot="internalText"> Merhaba Dost </template>
-      </InternalLink>
-
+      <nuxt-link
+        class="block px-2 py-1 mt-1 font-semibold rounded hover:bg-orange-400 sm:mt-0 sm:ml-2"
+        :to="localePath('/dost')"
+        >{{ $t('menu.dude') }}</nuxt-link
+      >
       <nuxt-link
         class="block px-2 py-1 mt-1 font-semibold rounded hover:bg-orange-400 sm:mt-0 sm:ml-2"
         :to="localePath('/work')"
