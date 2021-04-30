@@ -33,37 +33,13 @@
       :class="isOpen ? 'block' : 'hidden'"
       class="px-2 pt-2 pb-4 sm:flex sm:p-0"
     >
-      <nuxt-link
-        class="block px-2 py-1 font-semibold rounded hover:bg-orange-400"
-        :to="localePath('/')"
-        >{{ $t('menu.homepage') }}</nuxt-link
-      >
-      <InternalLink internalUrl="localePath('/dost')">
-        <template slot="internalText"> Merhaba Dost </template>
-      </InternalLink>
-
-      <nuxt-link
-        class="block px-2 py-1 mt-1 font-semibold rounded hover:bg-orange-400 sm:mt-0 sm:ml-2"
-        :to="localePath('/work')"
-        >{{ $t('menu.work') }}</nuxt-link
-      >
-      <nuxt-link
-        class="block px-2 py-1 mt-1 font-semibold rounded hover:bg-orange-400 sm:mt-0 sm:ml-2"
-        :to="localePath('/lang')"
-        >{{ $t('menu.lang') }}</nuxt-link
-      >
-      <nuxt-link
-        class="block px-2 py-1 mt-1 font-semibold rounded hover:bg-orange-400 sm:mt-0 sm:ml-2"
-        :to="localePath('/menutest')"
-        >{{ $t('menu.menutest') }}</nuxt-link
-      >
-      <nuxt-link
-        class="block px-2 py-1 mt-1 font-semibold rounded hover:bg-orange-400 sm:mt-0 sm:ml-2"
-        v-for="locale in availableLocales"
-        :key="locale.code"
-        :to="switchLocalePath(locale.code)"
-        >{{ locale.name }}</nuxt-link
-      >
+      <ul>
+        <li v-for="(item, index) in menuLink" :key="index">
+          <InternalLink internalUrl="{{ item.linkUrl }}">
+            <template :slot="internalText"> {{ item.menuName }} </template>
+          </InternalLink>
+        </li>
+      </ul>
     </div>
   </header>
 </template>
@@ -77,6 +53,9 @@ export default {
   data() {
     return {
       isOpen: false,
+      menuLink: [
+        { linkUrl: "localePath('/')", menuName: "$t('menu.homepage')" },
+      ],
     }
   },
 }

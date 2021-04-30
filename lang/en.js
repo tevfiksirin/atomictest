@@ -9,4 +9,7 @@ export default {
   messages: {
     welcome: 'Welcome',
   },
+  selam: {
+    selamlama: 'Hello',
+  },
 }
