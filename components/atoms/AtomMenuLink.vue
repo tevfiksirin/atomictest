@@ -1,5 +1,8 @@
 <template>
-  <nuxt-link class="mr-5 hover:text-gray-900" :to="localePath(linkMenu.url)">
+  <nuxt-link 
+    class="block px-2 py-1 font-semibold rounded hover:bg-orange-400" 
+    :to="localePath(linkMenu.url)" 
+    @click.native="isOpen = !isOpen">
     {{ $t(linkMenu.name) }}
   </nuxt-link>
 </template>
