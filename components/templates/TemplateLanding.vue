@@ -1,6 +1,6 @@
 <template>
   <section class="flex flex-col min-h-screen">
-    <!-- <OrganismHeader :links="links" /> -->
+    <OrganismGlobalHeader :linkMenus="linkMenus" />
     <div class="flex-auto flex flex-wrap bg-white">
       <OrganismBanner class="w-full md:w-3/4 text-center md:text-left" />
       <div class="container mx-auto px-4 py-8 md:py-16">
@@ -17,10 +17,17 @@
 <script>
 export default {
   name: 'TemplateLanding',
-
+    computed: {
+    availableLocales() {
+      return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
+    },
+  },
   data: () => {
     return {
-      links: [{ name: 'Dost', url: 'dost' }],
+      linkMenus: [
+        { name: 'menu.dude', url: 'dost' },
+        { name: 'menu.lang', url: 'lang' }
+      ],
       cards: [
         {
           title: 'Card 1',

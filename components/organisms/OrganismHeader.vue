@@ -5,7 +5,7 @@
     <div
       class="w-full md:w-3/4 px-4 pb-4 md:pb-0 flex items-center justify-between"
     >
-      <AtomLogo />
+      <!-- <AtomLogo /> -->
       <MoleculeLinks class="flex" :links="links" />
     </div>
     <div class="w-full md:w-1/4 px-4">
