@@ -31,7 +31,10 @@ export default {
     '@nuxtjs/tailwindcss',
   ],
   tailwindcss: {
+    cssPath: '~/assets/css/tailwind.css',
+    configPath: 'tailwind.config.js',
     jit: true,
+    exposeConfig: true,
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -69,5 +72,16 @@ export default {
   content: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    transpile: [
+      /vue-if-bot/,
+      /^vue-cookieconsent-component(.*)?$/,
+      'shifty/src/tweenable',
+    ],
+  },
+  postcss: {
+    plugins: {
+      'postcss-nested': {},
+    },
+  },
 }

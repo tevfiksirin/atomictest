@@ -33,10 +33,10 @@
       :class="isOpen ? 'block' : 'hidden'"
       class="px-2 pt-2 pb-4 sm:flex sm:p-0"
     >
-    <OrganismGlobalHeader 
-      :linkMenus="linkMenus" 
-      @click.native="isOpen = !isOpen"
-    />
+      <OrganismGlobalHeader
+        :linkMenus="linkMenus"
+        @click.native="isOpen = !isOpen"
+      />
       <nuxt-link
         class="block px-2 py-1 mt-1 font-semibold rounded hover:bg-orange-400 sm:mt-0 sm:ml-2"
         v-for="locale in availableLocales"
