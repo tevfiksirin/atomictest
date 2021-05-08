@@ -3,7 +3,7 @@
     <cookie-consent>
       <template slot="message">
         {{ $t('kvkk.message') }}
-        <a class="btn btn-link ml-5 mr-5" href="#">{{ $t('kvkk.button') }}</a>
+        <a class="ml-5 mr-5 btn btn-link" href="#">{{ $t('kvkk.button') }}</a>
       </template>
       <template slot="button">
         <button class="btn btn-info">{{ $t('kvkk.accept') }}</button>
@@ -25,7 +25,7 @@ export default {
 <style lang="postcss">
 /* purgecss start ignore */
 .cookie-consent {
-  @apply .w-full .py-2 .relative .flex .items-center .justify-center .bg-gray-300 .text-xl .fixed .bottom-0;
+  @apply .w-full .py-2 .flex .items-center .justify-center .bg-gray-300 .text-xl .fixed .bottom-0;
   @screen md {
     @apply .text-sm .text-center;
   }
