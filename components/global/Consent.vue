@@ -1,10 +1,14 @@
 <template>
   <IfBot>
-    <CookieConsent
-      message="We use Cookies for user analysis and on-page improvements!"
-      link-label="Devamını Oku"
-      href="/dost"
-    />
+    <cookie-consent>
+      <template slot="message">
+        {{ $t('kvkk.message') }}
+        <a class="btn btn-link ml-5 mr-5" href="#">{{ $t('kvkk.button') }}</a>
+      </template>
+      <template slot="button">
+        <button class="btn btn-info">{{ $t('kvkk.accept') }}</button>
+      </template>
+    </cookie-consent>
   </IfBot>
 </template>
 

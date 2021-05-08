@@ -12,4 +12,10 @@ export default {
   selam: {
     selamlama: 'Hello',
   },
+  kvkk: {
+    message:
+      'Kullanıcı deneyiminizi geliştiren teknik özellikleri desteklemek için web sitemizdeki çerezleri kullanıyoruz.Ayrıca, analitik ve reklamcılık hizmetlerini de kullanıyoruz. Vazgeçmek için daha fazla bilgi için tıklayın.',
+    button: 'Read More',
+    accept: 'Accept',
+  },
 }
