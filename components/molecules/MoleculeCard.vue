@@ -1,6 +1,6 @@
 <template>
   <div
-    class="p-6 border border-blue-200 hover:shadow-lg rounded-sm bg-blue-100 text-blue-800 transition ease-in-out duration-500"
+    class="p-6 text-blue-800 transition duration-500 ease-in-out bg-green-100 border border-blue-200 rounded-sm hover:shadow-lg"
   >
     <AtomTitle tag="h2" :content="card.title" />
     <AtomText :text="card.text" />

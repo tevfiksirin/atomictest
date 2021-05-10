@@ -1,5 +1,5 @@
 <template>
-  <div class="h-64 bg-orange-600 flex justify-center items-center">
-    <h1 class="text-white text-5xl pt-16 pb-16">{{ $t('menu.work') }}</h1>
+  <div class="flex items-center justify-center h-64 bg-indigo-400">
+    <h1 class="pt-16 pb-16 text-5xl text-white">{{ $t('menu.work') }}</h1>
   </div>
 </template>
