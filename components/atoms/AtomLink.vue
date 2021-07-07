@@ -1,5 +1,5 @@
 <template>
-  <a :href="link.url">{{ link.name }}</a>
+  <a class="text-indigo-500" :href="link.url">{{ link.name }}</a>
 </template>
 
 <script>

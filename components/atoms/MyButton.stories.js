@@ -1,0 +1,25 @@
+import MyButton from './MyButton'
+export default {
+  title: 'selam/Button',
+  component: MyButton,
+  argTypes: {
+    type: {
+      control: {
+        type: 'select',
+        options: ['primary', 'secondary', 'hu'],
+      },
+      defaultValue: 'primary',
+    },
+    round: { control: 'boolean' },
+    text: {
+      control: 'text',
+      defaultValue: 'Awesome Button',
+    },
+  },
+}
+
+export const Button = (arg, { argTypes }) => ({
+  components: { MyButton },
+  props: Object.keys(argTypes),
+  template: '<MyButton v-bind="$props" />',
+})
